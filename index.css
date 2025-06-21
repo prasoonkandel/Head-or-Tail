@@ -1,0 +1,84 @@
+* {
+  font-family: "Patrick Hand", cursive;
+}
+
+small {
+  color: #666;
+}
+
+body {
+  margin: 0px;
+  width: 800px;
+  margin: auto;
+}
+
+#username_div,
+#game_div {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #e7e7e7;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  margin: 5px;
+  cursor: pointer;
+  background: #67ab05;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 0px;
+  margin: 5px;
+}
+
+.side {
+  padding: 15px;
+  font-size: 25px;
+  text-align: center;
+  background: #fdfd96;
+  margin: 5px;
+}
+
+#results,
+#flip {
+  padding: 15px;
+  font-size: 25px;
+  text-align: center;
+  background: #fdfd96;
+  margin: 5px;
+}
+
+/* Responsive for phones: make fonts and boxes BIGGER */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  #username_div,
+  #game_div,
+  .side,
+  #results,
+  #flip {
+    width: 100%;
+    padding: 25px;
+    font-size: 30px;
+  }
+
+  button,
+  input {
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  small {
+    font-size: 16px;
+  }
+}

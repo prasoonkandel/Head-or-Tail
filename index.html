@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>JS GAME</title>
+  </head>
+  <body>
+    <center><h1>Head or Tail</h1></center>
+    <div id="username_div">
+      <form onsubmit="username_summit(event);">
+        Enter username: <br />
+        <input type="text" id="username" /> <br />
+        <small>Username must be atleast 5 character long</small>
+        <br />
+        <button type="submit">Start Game</button>
+      </form>
+    </div>
+    <div id="game_div">
+      Welcome <span id="user"></span>
+      <br />
+      <div class="side">
+        Choose Your Side: <br />
+        <br />
+        <button
+          style="
+            margin-right: 5px;
+            width: 100px;
+            font-size: 20px;
+            background: #ad5004;
+          "
+          onclick="start_game('head');"
+        >
+          Head</button
+        >or
+        <button
+          style="
+            margin-right: 5px;
+            width: 100px;
+            font-size: 20px;
+            background: #11038d;
+          "
+          onclick="start_game('tail');"
+        >
+          Tail
+        </button>
+      </div>
+      <div id="flip" style="display: none">
+        flipping the coin.... please wait...... <br />
+        <img src="./coin.gif" width="30px" />
+      </div>
+      <div id="results">Results:</div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
